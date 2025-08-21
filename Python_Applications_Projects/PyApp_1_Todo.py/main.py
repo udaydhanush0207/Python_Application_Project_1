@@ -15,3 +15,4 @@ print(type(todos))
 
 print("Todo added successfully!")
 
+print("Number of todos:", len(todos))
