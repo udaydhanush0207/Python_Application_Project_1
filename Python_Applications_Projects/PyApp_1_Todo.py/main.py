@@ -7,4 +7,3 @@ print(user_text)
 
 print("Todo added successfully!")
 
-print("Hellon world!")
