@@ -1,18 +1,19 @@
 
 user_prompt = "Enter your todo item: "
 
-todo1 = input(user_prompt)
-todo2 = input(user_prompt)
-todo3 = input(user_prompt)
+todos = []
 
-todos = [todo1, todo2, todo3, "Hello World!"]   
+while True:
+    todo = input(user_prompt)
+    print(todo.capitalize())
+    todos.append(todo)
+    print(todos)
 
-print(todos)
 
-print(type(user_prompt))
-      
-print(type(todos))
+print("To do added successfully!")
 
-print("Todo added successfully!")
+print("Number of todos:", len(todo))
 
-print("Number of todos:", len(todos))
+
+
+
