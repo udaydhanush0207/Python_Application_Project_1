@@ -1,16 +1,24 @@
-user_prompt = "Enter your todo item: "
+todos = []                               # declaring todos as a list
 
-todos = []
+while True:                             #using while loop
+    user_action = input("Type add or show or exit: ")     # giving user input
+    user_action = user_action.strip()   # strip() is used for removing trailing spaces
 
-while True:
-    todo = input(user_prompt)
-    todos.append(todo)
-    print(todo.title())
-    print(todos)
+    match user_action:                  #match - case
+        case "add":
+            todo = input("Enter a todo:")
+            todos.append(todo.title())     #used for add input values to the todos list and title is used for capital letters of every word
+        case "show":
+            for item in todos:       #using for loop
+                print(item)
+        case "exit":                 #breaking the while loop under match case
+            break
+
+print("bye")                        # prints for while loop after exit
 
 print("To do added successfully!")
 
-print("Number of todos:", len(todo))
+print("Number of todos:", len(todos))
 
 
 
