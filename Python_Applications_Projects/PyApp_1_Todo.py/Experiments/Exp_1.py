@@ -9,7 +9,7 @@ while True:  #using while loop
             todo = input("Enter a todo:")
             todos.append(
                 todo.title())                                  #used for add input values to the todos list and title is used for capital letters of every word
-        case "show" | "display":                                 #using a bitwsie  OR operator
+        case "show" | "display":                                 #using a bitwise  OR operator
             for item in todos:                                     #using for loop
                 print(item.title())                                 #making every eord capital
         case "exit":                                               #breaking the while loop under match case
