@@ -12,7 +12,7 @@ while True:                             #using while loop
             for item in todos:       #using for loop
                 print(item.capitalize())      #showing the list of items and and capitalising too
         case "edit":                  #editing a list item
-            number = input("Enter the number of todo to edit:")
+            number = input("Enter the number of Todo to edit:")
             print(number)
             new_todo = input("Enter your Todo to edit:")    #replacing the required item into the list
             todos[int(number)] = new_todo #converting string with int
