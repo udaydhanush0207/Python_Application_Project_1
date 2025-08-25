@@ -14,7 +14,7 @@ while True:                             #using while loop
         case "edit":                  #editing a list item
             number = input("Enter the number of todo to edit:")
             print(number)
-            new_todo = input("Enter your todo to edit:")    #replacing the required item into the list
+            new_todo = input("Enter your Todo to edit:")    #replacing the required item into the list
             todos[int(number)] = new_todo #converting string with int
             print(new_todo.title())
         case "exit":                 #breaking the while loop under match case
