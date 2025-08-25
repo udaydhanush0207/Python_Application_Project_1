@@ -15,8 +15,8 @@ while True:                             #using while loop
             number = input("Enter the number of todo to edit:")
             print(number)
             new_todo = input("Enter your todo to edit:")    #replacing the required item into the list
-            todos[int(number)] = new_todo # converting string with int
-            print(new_todo)
+            todos[int(number)] = new_todo #converting string with int
+            print(new_todo.title())
         case "exit":                 #breaking the while loop under match case
             break
 
