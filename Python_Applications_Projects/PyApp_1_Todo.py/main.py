@@ -6,7 +6,7 @@ while True:                             #using while loop
 
     match user_action:                  #match - case
         case "add":
-            todo = input("Enter a todo:")
+            todo = input("Enter a Todo:")
             todos.append(todo)     #used for add input values to the todos list and title is used for capital letters of every word
         case "show":
             for item in todos:       #using for loop
