@@ -9,8 +9,9 @@ while True:                             #using while loop
             todo = input("Enter a Todo:")
             todos.append(todo)     #used for add input values to the todos list and title is used for capital letters of every word
         case "show":
-            for index, item in enumerate(todos):       #using for loop,enumerate adds an index to each item while iterating
-                print(index,'-', item.capitalize())      #showing the list of items and and capitalising too
+            for index, item in enumerate(todos):
+                row = f"{index}-{item}"    #using f strings directly by adding and assigning it to the row
+                print(row)      #showing the list of items and capitalising too
         case "edit":                  #editing a list item
             number = input("Enter the number of Todo to edit:")
             print(number)
