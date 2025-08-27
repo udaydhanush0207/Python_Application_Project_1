@@ -10,7 +10,7 @@ while True:                             #using while loop
             todos.append(todo)     #used for add input values to the todos list and title is used for capital letters of every word
         case "show":
             for index, item in enumerate(todos):
-                row = f"{index + 1}-{item}"    #using f strings directly by adding and assigning it to the row
+                row = f"{index - 1}-{item}"    #using f strings directly by adding and assigning it to the row
                 print("Length of the row is :", len(row))   #adding length as well
                 print(row.title())      #showing the list of items and capitalising too
         case "edit":                  #editing a list item
