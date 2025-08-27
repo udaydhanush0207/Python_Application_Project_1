@@ -28,7 +28,7 @@ while True:                             #using while loop
 
 print("bye")                        # prints for while loop after exit
 
-print("To do added successfully!")
+print("Todo added successfully!")
 
 print("Number of todos: ", len(todos))   #checks the length of the todos i.e. the no. of items in the list
 
