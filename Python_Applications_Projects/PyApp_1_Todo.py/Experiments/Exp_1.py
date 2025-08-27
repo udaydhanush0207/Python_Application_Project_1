@@ -21,7 +21,6 @@ while True:                             #using while loop
             print(new_todo.title())
         case "complete":                         #here when the assigned work is done, it should be deleted
             number = int(input("Enter the number of todo to complete:"))
-            number = number - 1
             todos.pop(int(number))              # pop() used for removing list indexing
             print(todos)
         case "exit":                 #breaking the while loop under match case
